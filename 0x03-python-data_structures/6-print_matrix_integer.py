@@ -2,6 +2,8 @@
 
 def print_matrix_integer(matrix=[[]]):
     for lists in matrix:
-        for nums in lists:
-            print("{:d}".format(nums), end=' ')
+        for index, nums in enumerate(lists):
+            print("{:d}".format(nums), end='')
+            if index != len(lists) - 1:
+                print(end=" ")
         print()
