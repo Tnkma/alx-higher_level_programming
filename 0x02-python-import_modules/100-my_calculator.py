@@ -2,9 +2,6 @@
 if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     import sys
-
-
-    # mapping the functions together
     operators_function = {
         '+': add,
         '-': sub,
@@ -28,8 +25,8 @@ if __name__ == "__main__":
                 result = sub(int(sys.argv[1]), int(sys.argv[3]))
                 print("{} - {} = {}".format(sys.argv[1], sys.argv[3], result))
             elif operator == '*':
-                 result = mul(int(sys.argv[1]), int(sys.argv[3]))
-                 print("{} * {} = {}".format(sys.argv[1], sys.argv[3], result))
+                result = mul(int(sys.argv[1]), int(sys.argv[3]))
+                print("{} * {} = {}".format(sys.argv[1], sys.argv[3], result))
             elif operator == '/':
-                 result = div(int(sys.argv[1]), int(sys.argv[3]))
-                 print("{} / {} = {}".format(ys.argv[1], sys.argv[3], result))
+                result = div(int(sys.argv[1]), int(sys.argv[3]))
+                print("{} / {} = {}".format(ys.argv[1], sys.argv[3], result))
