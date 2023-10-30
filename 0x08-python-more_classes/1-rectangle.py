@@ -24,6 +24,9 @@ class Rectangle:
         sets the value to the  private instance of width
         if width is not an int, raise TypeError
         if width is less than 0, Raise ValueError
+
+        Args:
+            value to set to self
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -44,6 +47,9 @@ class Rectangle:
         sets the value of height to the private instance
         if height is not an integer, raise an error message
         if height is less than 0, raise an error message too
+
+        Args:
+            value to set to self
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
