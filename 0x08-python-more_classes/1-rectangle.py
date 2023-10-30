@@ -8,15 +8,15 @@ a private instance height and width
 class Rectangle:
 
     def __init__(self, width=0, height=0):
-        self._width = width
-        self._height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
         """
         Retrive and return the value of width
         """
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -25,18 +25,18 @@ class Rectangle:
         if width is not an int, raise TypeError
         if width is less than 0, Raise ValueError
         """
-        if not isinstance(self._width, int):
+        if not isinstance(self.__width, int):
             raise TypeError("width must be an integer")
-        if self._width < 0:
+        if self.__width < 0:
             raise ValueError("width must be >= 0")
-        self._width = value
+        self.__width = value
 
     @property
     def height(self):
         """
         Retrive and return the value of height
         """
-        return self._height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -45,8 +45,8 @@ class Rectangle:
         if height is not an integer, raise an error message
         if height is less than 0, raise an error message too
         """
-        if not isinstance(self._height, int):
+        if not isinstance(self.__height, int):
             raise TypeError("height must be an integer")
-        if self._height < 0:
+        if self.__height < 0:
             raise ValueError("height must be >= 0")
-        self._height = value
+        self.__height = value
