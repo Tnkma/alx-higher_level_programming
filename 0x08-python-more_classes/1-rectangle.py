@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 This program sets and retrieve
-a private instance height and width
 """
 
 
@@ -22,9 +21,6 @@ class Rectangle:
     def width(self, value):
         """
         sets the value to the  private instance of width
-        if width is not an int, raise TypeError
-        if width is less than 0, Raise ValueError
-
         Args:
             value to set to self
         """
@@ -45,9 +41,6 @@ class Rectangle:
     def height(self, value):
         """
         sets the value of height to the private instance
-        if height is not an integer, raise an error message
-        if height is less than 0, raise an error message too
-
         Args:
             value to set to self
         """
