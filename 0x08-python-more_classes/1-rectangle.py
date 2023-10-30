@@ -5,10 +5,12 @@ This program sets and retrieve
 
 
 class Rectangle:
+    """ defines the width and height of rectangle"""
 
     def __init__(self, width=0, height=0):
-        self.__height = height
-        self.__width = width
+        """Initiates the getter and setters."""
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
@@ -22,7 +24,7 @@ class Rectangle:
         """
         sets the value to the  private instance of width
         Args:
-            value to set to self
+            value: to set to self
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -42,7 +44,7 @@ class Rectangle:
         """
         sets the value of height to the private instance
         Args:
-            value to set to self
+            value: to set to self
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
