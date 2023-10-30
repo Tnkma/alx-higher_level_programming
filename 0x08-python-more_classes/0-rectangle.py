@@ -9,5 +9,6 @@ class Rectangle:
     A Rectangle class
     """
     pass
+
     def my_rectangle(self):
         pass
