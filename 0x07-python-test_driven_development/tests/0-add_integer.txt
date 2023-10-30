@@ -7,19 +7,22 @@
 >>> add_integer('hey', 4)
 Traceback (most recent call last):
     ...
-TypeError: a must be integer.
+TypeError: a must be an integer
+
 >>> add_integer(100, 'here')
 Traceback (most recent call last):
     ...
-TypeError: b must be integer.
+TypeError: b must be an integer
+
 >>> add_integer(None, 100)
 Traceback (most recent call last):
     ...
-TypeError: a must be integer.
+TypeError: a must be an integer
+
 >>> add_integer(100, None)
 Traceback (most recent call last):
     ...
-TypeError: b must be integer.
+TypeError: b must be an integer
 >>> add_integer(23, )
 121
 >>> add_integer(0.045, 2)
