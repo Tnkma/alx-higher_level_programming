@@ -4,9 +4,11 @@ Here we are writting a program
 An addition program.
 Including its doctest part on another file
 """
+
+
 def add_integer(a, b=98):
     """
-    Checks if the data type is integer else raise a typeerror 
+    Checks if the data type is integer else raise a typeerror
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
