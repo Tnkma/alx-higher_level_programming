@@ -2,6 +2,8 @@
 """
 A function that reads a txt file and prints it
 """
+
+
 def read_file(filename=""):
     """
     Reads in from the filename
