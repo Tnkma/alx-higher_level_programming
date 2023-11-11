@@ -65,3 +65,14 @@ class Rectangle(Base):
     def area(self):
         """ gets the area of the rectangle """
         return self.__height * self.__width
+
+    def display(self):
+        """
+        prints to stdout the Rectangle instance
+        """
+        for _ in range(self.__height):
+            print("#" * self.__width)
+
+    def __str__(self):
+        """Overrides the str method to return [Rectangle] (<id>) <x>/<y> - <width>/<height>."""
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
