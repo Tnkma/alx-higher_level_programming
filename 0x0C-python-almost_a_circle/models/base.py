@@ -21,7 +21,7 @@ class Base:
         """
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
-        else:   
+        else:
             return json.dumps(list_dictionaries)
 
     @classmethod
@@ -67,4 +67,3 @@ class Base:
         # update the dummy with update method
         dummy.update(**dictionary)
         return dummy
-
