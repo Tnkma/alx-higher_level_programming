@@ -4,7 +4,6 @@ prints all state with a name starting with N
 """
 import MySQLdb
 import sys
-
 if __name__ == " __main__ ":
     user_name = sys.argv[1]
     password = sys.argv[2]
@@ -19,8 +18,8 @@ if __name__ == " __main__ ":
             )
     curs = connect_db.cursor()
     curs.execute("SELECT * FROM states WHERE BINARY name LIKE 'N%'")
-    selected_states = fetchall()
+    selected_states = curs.fetchall()
     for states in selected_states:
         print(states)
     curs.close()
-    db.close()
+    connect_db.close()
