@@ -18,7 +18,7 @@ if __name__ == " __main__ ":
             db=db_name
             )
     curs = connect_db.cursor()
-    curs.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY state.id")
+    curs.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
     selected_states = fetchall()
     for states in selected_states:
         print(states)
