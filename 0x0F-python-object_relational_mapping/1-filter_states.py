@@ -18,7 +18,7 @@ if __name__ == " __main__ ":
             db=db_name
             )
     curs = connect_db.cursor()
-    curs.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    curs.execute("SELECT * FROM states WHERE BINARY name LIKE 'N%'")
     selected_states = fetchall()
     for states in selected_states:
         print(states)
