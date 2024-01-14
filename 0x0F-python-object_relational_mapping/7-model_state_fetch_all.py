@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Lists all state objects from the database 
+Lists all state objects from the database
 """
 import sys
 from sqlalchemy.orm import sessionmaker
@@ -12,9 +12,10 @@ if __name__ == "__main__":
     user_name = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
-    
+
     # Create a database connection
-    engine = create_engine(f'mysql+mysqldb://{user_name}:{password}@localhost:3306/{db_name}')
+    engine = create_engine(
+        f'mysql+mysqldb://{user_name}:{password}@localhost:3306/{db_name}')
 
     # Create a session to interact with the database
     Session = sessionmaker(bind=engine)
@@ -26,7 +27,6 @@ if __name__ == "__main__":
     states = session.query(State).order_by(State.id).all()
     for each_state in states:
         print(f"{each_state.id}: {each_state.name}")
-    
+
     # Close all session
     session.close()
-    
