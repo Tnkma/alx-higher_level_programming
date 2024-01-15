@@ -4,7 +4,7 @@ prints all state with a name starting with N
 """
 import MySQLdb
 import sys
-if __name__ == " __main__ ":
+if __name__ == "__main__":
     user_name = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
